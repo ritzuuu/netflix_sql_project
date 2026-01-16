@@ -14,8 +14,9 @@ The data for this project is sourced from the Kaggle dataset:
 **Dataset Link:** (#!/bin/bash
 curl -L -o ~/Downloads/netflix-shows.zip\
   https://www.kaggle.com/api/v1/datasets/download/shivamb/netflix-shows)
-# Schema
+##  Schema
 '''sql
+
 create table netflix
    (
 		 show_id varchar(6) ,
