@@ -15,22 +15,22 @@ The data for this project is sourced from the Kaggle dataset:
 curl -L -o ~/Downloads/netflix-shows.zip\
   https://www.kaggle.com/api/v1/datasets/download/shivamb/netflix-shows)
 ##  Schema
-'''sql
-create table netflix
-   (
-		 show_id varchar(6) ,
-		 type	 varchar(10),
-		 title	 varchar(150),
-		 director varchar(208),
-		 casts	 varchar(1000),
-		 country	varchar(150),
-		 date_added	 varchar(50),
-		 release_year	int ,
-		 rating       varchar(10),
-		 duration  varchar(15),	
-		 listed_in	varchar(100),
-		 description varchar(250)
-
-   );
-'''
+```sql
+DROP TABLE IF EXISTS netflix;
+CREATE TABLE netflix
+(
+    show_id      VARCHAR(5),
+    type         VARCHAR(10),
+    title        VARCHAR(250),
+    director     VARCHAR(550),
+    casts        VARCHAR(1050),
+    country      VARCHAR(550),
+    date_added   VARCHAR(55),
+    release_year INT,
+    rating       VARCHAR(15),
+    duration     VARCHAR(15),
+    listed_in    VARCHAR(250),
+    description  VARCHAR(550)
+);
+```
 
